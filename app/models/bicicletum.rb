@@ -5,4 +5,5 @@ class Bicicletum < ApplicationRecord
 end
 def prueba
     puts "esto es una prueba de pull"
+    puts "esto es otra prueba pull"
 end
