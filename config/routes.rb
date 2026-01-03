@@ -8,12 +8,11 @@ Rails.application.routes.draw do
   get "/hola", to: "pages#hola"
 
   resources :articles do
-    resources :comments 
+    resources :comments
   end
 
   get "about", to: "pages#about"
 
-  resources :tasks, only: [:index, :show, :new, :create]
+  resources :tasks, only: [ :index, :show, :new, :create ]
   root "bicicleta#index"
 end
-
