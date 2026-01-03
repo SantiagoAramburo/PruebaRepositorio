@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bicicletum %>
+
+<div>
+  <%= link_to "Edit this bicicletum", edit_bicicletum_path(@bicicletum) %> |
+  <%= link_to "Back to bicicleta", bicicleta_path %>
+
+  <%= button_to "Destroy this bicicletum", @bicicletum, method: :delete %>
+</div>

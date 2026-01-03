@@ -1,0 +1,5 @@
+<h1>Tasks <%= @task.title %></h1>
+<p><%= tag.strong "Description: " %><%= @task.description %></p>
+<p><%= @task.completed ? "Completada" : "Pendiente" %></p>
+<p><strong>Completada:</strong> <%= @task.completed ? "Sí" : "No" %></p>
+<p><%= link_to "Volver a tareas", tasks_path %></p>

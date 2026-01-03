@@ -1,0 +1,27 @@
+<h1>Nueva tarea</h1>
+<%= form_with model: @task, local: true do |form| %>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.label :completed %>
+    <%= form.check_box :completed %>
+  </p>
+
+  <p><%= form.submit "Crear tarea" %></p>
+<% end %>
+
+<% if @task.errors.any? %>
+  <ul>
+    <% @task.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>

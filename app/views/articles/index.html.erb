@@ -1,0 +1,18 @@
+<h1>Artículos</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+        <%= article.title %> 
+        <a href="<%= article_path(article) %>">Ver artículo</a>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+    <%= link_to "Crear nuevo artículo", new_article_path %>
+</p>
+
+<p>
+    <%= link_to "Acerca de", about_path %>
+</p>

@@ -1,0 +1,11 @@
+<h1> Comentario de articulo  <%= @article.title %></h1>
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+        <%= comment.body %>
+    </li>
+  <% end %>
+</ul>
+<p><%= link_to "Nuevo comentario", new_article_comment_path(@article) %></p>
+<p><%= link_to "Volver al artículo", article_path(@article) %></p>

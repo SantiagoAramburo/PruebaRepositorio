@@ -1,0 +1,11 @@
+
+ <h1>Nuevo Comentario para "<%= @article.title %>"</h1>
+<%= form_with model: [@article, @comment], local: true do |form| %>
+  <p>
+    <%= form.label :body, "Comentario" %>
+    <%= form.text_area :body %>
+  </p>
+    <p>
+     <%= form.submit "Enviar Comentario" %>
+    </p>
+<% end %>
