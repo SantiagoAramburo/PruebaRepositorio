@@ -3,3 +3,6 @@ class Bicicletum < ApplicationRecord
     validates :rodada, presence: true, numericality: { only_integer: true,
         greater_than: 0 }
 end
+def prueba
+    puts "esto es una prueba de pull"
+end
