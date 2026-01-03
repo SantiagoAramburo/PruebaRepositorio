@@ -66,11 +66,9 @@ class BicicletaController < ApplicationController
     # Only allow a list of trusted parameters through.
     def bicicletum_params
       params.expect(bicicletum: [ :marca, :rodada, :activa ])
-
     end
 
     def bicicleta_path
-      '/bicicleta'
+      "/bicicleta"
     end
 end
-

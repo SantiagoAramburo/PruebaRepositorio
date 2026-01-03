@@ -6,4 +6,3 @@ class Car < ApplicationRecord
     validates :year, presence: true, numericality: { only_integer: true, greater_than: 1885 }
     scope :recent_models, -> { where("year >= ?", Date.current.year - 5) }
 end
-

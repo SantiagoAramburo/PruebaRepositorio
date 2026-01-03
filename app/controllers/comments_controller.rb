@@ -15,10 +15,10 @@ class CommentsController < ApplicationController
     if @comment.save
         redirect_to article_comments_path(@article)
     else
-        render 'new'
+        render "new"
     end
     end
-    
+
     private
     def comment_params
     params.require(:comment).permit(:author, :body)
