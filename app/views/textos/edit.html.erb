@@ -1,0 +1,12 @@
+<% content_for :title, "Editing texto" %>
+
+<h1>Editing texto</h1>
+
+<%= render "form", texto: @texto %>
+
+<br>
+
+<div>
+  <%= link_to "Show this texto", @texto %> |
+  <%= link_to "Back to textos", textos_path %>
+</div>

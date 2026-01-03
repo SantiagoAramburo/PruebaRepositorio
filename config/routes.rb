@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :textos
   resources :bicicleta
   get "tasks/index"
   get "tasks/show"
@@ -14,5 +15,5 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
 
   resources :tasks, only: [ :index, :show, :new, :create ]
-  root "bicicleta#index"
+  root "articles#index"
 end

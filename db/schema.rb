@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_03_004819) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_03_203709) do
   create_table "articles", force: :cascade do |t|
     t.text "content"
     t.datetime "created_at", null: false
@@ -91,6 +91,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_03_004819) do
     t.datetime "created_at", null: false
     t.text "description"
     t.string "title"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "textos", force: :cascade do |t|
+    t.string "autor"
+    t.datetime "created_at", null: false
+    t.string "cuerpo"
+    t.string "titulo"
     t.datetime "updated_at", null: false
   end
 
