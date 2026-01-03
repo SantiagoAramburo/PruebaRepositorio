@@ -68,4 +68,9 @@ class BicicletaController < ApplicationController
       params.expect(bicicletum: [ :marca, :rodada, :activa ])
 
     end
+
+    def bicicleta_path
+      '/bicicleta'
+    end
 end
+
